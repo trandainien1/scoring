@@ -39,18 +39,15 @@ class PascalVOC2012Dataset_remove_multi_class(ImageFolder):
         self.img_labels = []
         if train==True:
             self.target='train'
-            # class_file = os.path.join(self.image_sets, "train_classes.txt")
-            class_file = os.path.join(self.image_sets, "train.txt")
+            class_file = os.path.join(self.image_sets, "train_classes.txt")
         elif train==False:
             self.target='val'
-            # class_file = os.path.join(self.image_sets, "val_classes.txt")
-            class_file = os.path.join(self.image_sets, "val.txt")
+            class_file = os.path.join(self.image_sets, "val_classes.txt")
 
         class_file = open(class_file, "r")
         list = class_file.read().split('\n')
         for line in list:
             data = line.split()
-            print('DEBUG: ', data)
             img_name = data[0]
             labels = data[1:]
             # print(labels.count(1))
