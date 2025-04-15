@@ -50,7 +50,7 @@ class PascalVOC2012Dataset_remove_multi_class(ImageFolder):
         list = class_file.read().split('\n')
         for line in list:
             data = line.split()
-            print('DEBUG: data')
+            print('DEBUG: ', data)
             img_name = data[0]
             labels = data[1:]
             # print(labels.count(1))
