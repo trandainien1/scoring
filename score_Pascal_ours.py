@@ -35,7 +35,7 @@ print("device: " +  device)
 batch_size = 1
 img_size = 224
 
-root_dir = '/home/NAS_mount/sbim/Dataset/Pascal VOC 2012/trainval/VOCdevkit/VOC2012'
+root_dir = '/kaggle/input/pascal-voc-2012/VOCdevkit/VOC2012'
 mean=[0.457342265910642, 0.4387686270106377, 0.4073427106250871]
 std=[0.26753769276329037, 0.2638145880487105, 0.2776826934044154]
 
